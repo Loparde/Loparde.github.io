@@ -1,0 +1,265 @@
+/*img {
+    width: 600px;
+    padding: 10px, 10px, 10px, 10px;
+    color: var(--highlighted);
+    align-content: center;
+}*/
+
+div2 {
+    max-height: 700px;
+    max-width: 1000px
+}
+
+video {
+    align-content: center;
+}
+
+#WebsiteHeading {
+    margin-top: 30px;
+}
+
+#multiplePictures {
+    width: 55%;
+}
+
+#multiplePictures img{
+    height: 200px;
+    margin: 0px -90px 0px -90px;
+    object-fit: contain;
+}
+
+/**/
+/*Tabbar*/
+/**/
+.tabs {
+    overflow: hidden;
+    background-color: var(--background);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: var(--background);
+}
+
+.tab button {
+    background-color: inherit;
+    color: var(--text);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+    .tab button:hover {
+        background-color: var(--highlighted);
+        color: var(--backbackground);
+    }
+
+    .tab button.active {
+        background-color: var(--highlighted);
+    }
+
+.logotab button{
+    background-color: inherit;
+    color: var(--text);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1px 0px;
+    margin: 0px -10px;
+    transition: 0.3s;
+    font-size: 17px;
+    padding-bottom: 2px;
+}
+
+    .logotab button:hover {
+        background-color: var(--highlighted);
+    }
+
+    .logotab button.active {
+        background-color: var(--highlighted);
+    }
+
+.tab2 button {
+    background-color: var(--backbackground);
+    color: var(--highlighted);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+#logo {
+    margin-right: 0;
+    margin-left: 65%;
+    margin-top: 15px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/**/
+/*pictures*/
+/**/
+.image {
+    width: 600px;
+    padding: 10px, 10px, 10px, 10px;
+    color: var(--highlighted);
+    align-content: center;
+}
+
+.Pictures {
+}
+
+.Pictures div {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.Pictures img {
+    max-height:400px;
+    max-width:400px;
+    object-fit: contain;
+}
+
+.Pictures h5 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/**/
+/*Procedural Dungeon Generation*/
+/**/
+
+#graphPic {
+    float:right;
+    width: 300px;
+    height: 300px;
+}
+
+#generationPic {
+    width: 550px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/**/
+/*Abduction in Lab 42*/
+/**/
+
+#posterVR {
+    margin: 0px 50px 20px 20px;
+    float: left;
+    height: 500px;
+    object-fit: contain;
+}
+
+#videoField {
+    float: left;
+    background-color: var(--background);
+    height: auto;
+    padding: 0px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+    #videoField video {
+        margin-top: -80px;
+    }
+
+    #videoField h1 {
+        margin-top: -25px;
+    }
+
+    #videoField iframe {
+        margin-top: -20px;
+    }
+
+/**/
+/*Art*/
+/**/
+
+.PictureCollection {
+    padding: 0px 15% 0px 15%;
+}
+
+#ArtPreview {
+    height: 200px;
+    width: 200px;
+    padding: 10px 10px 10px 10px;
+    object-fit: cover;
+}
+
+#ArtFull {
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+
+#ArtFullContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 80%;
+    background-color: var(--background);
+    background-blend-mode: darken;
+    justify-content: center;
+    align-content: center;
+    visibility: hidden;
+    z-index: 100;
+    border-radius: 10px 10px 10px 10px;
+    padding: 30px 30px 30px 30px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#ArtFullContainer:hover {
+    visibility: visible;
+}
+
+#ArtPreview:hover + #ArtFullContainer {
+    visibility: visible;
+}
+
+#Navigation {
+    position: fixed;
+    height: 100%;
+    margin-left: 100%;
+    transform: translate(-125%, 0%);
+    z-index: 50;
+}
+
+    #Navigation div {
+        margin: 5% 0px 100% 0px;
+        background-color: var(--text);
+        padding: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    #Navigation a {
+        color: var(--backbackground);
+    }
+
+/**/
+/*Usability*/
+/**/
+
+#usabilityPictures {
+    height: 400px;
+    margin: 20px;
+}

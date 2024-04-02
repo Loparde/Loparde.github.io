@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StabMario</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kdam+Thmor+Pro&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="PortfolioStyle.css">
+    <link rel="stylesheet" href="../GeneralStyles.css">
+    <script src="../Script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../Logo.ico">
+</head>
+<body>
+    <div id="page">
+        <div id="content">
+            <h3> </h3>
+            <div class="tabs">
+                <a class="logotab" href="../index.html"> <button><img id="main" src="../Logo.png" /></button></a>
+                <a class="tab" href="ProceduralDungeon.html"> <button>Procedural Dungeon 3D</button></a>
+                <a class="tab" href="VRPuzzleGame.html"> <button>VR Puzzle Game</button></a>
+                <a class="tab" href="StrifeOfLife.html"> <button>Strife of Life</button></a>
+                <a class="tab" href="LowpolyAnimation.html"> <button>Lowpoly Video</button></a>
+                <a class="tab" href="TicTacToe.html"> <button>Tic Tac Toe</button></a>
+                <a class="tab" href="ProceduralLabyrinth.html"> <button>Procedural Labyrinth</button></a>
+                <a class="tab2" href="StabMario.html"> <button>Console Game</button></a>
+                <a class="tab" href="Art.html"> <button>Artworks</button></a>
+                <a class="tab" href="Sound.html"> <button>Sound Design</button></a>
+                <a class="tab" href="Usability.html"> <button>Usability</button></a>
+                <a class="tab" href="ComingSoon.html"> <button>Coming soon...</button></a>
+            </div>
+            <div>
+                <h5 id="WebsiteHeading">Stab Mario</h5>
+                <br />
+                <div class="contentField">
+                    <p1>This Game was developed in my first semester. The intention was to get to know the programming language C++.</p1>
+                    <br />
+                    <p1>I decided to make a platformer game like Super Mario Bros. Though I also wanted to be able to use a sword. Those ideas combined created Stab Mario.</p1>
+                    <br />
+                    <p1>The first hinderance to getting everything to work was to instantaneously react to buttonpresses. That problem was quickly solved with the '_kbhit()'-Function.</p1>
+                    <br />
+                    <p1>Setting up the main menu, the cursor started to be annoying. Therefore I got rid of it.</p1>
+                </div>
+                <div id="Centered"><img src="../StabMario/MainMenu.png" alt="MainMenu" /></div>
+                <div class="contentField">
+                    <p1>Inside the actual game the player is a blue ASCII symbol. The player is able to jump and move left and right. After picking up the sword (&#9532) the player can also stab left and right</p1>
+                    <br />
+                    <p1>On contact with the enemy or a bullet the player loses health. How much health is left is portrait in the left bottom corner. More can be collected by picking up the hearts on the map.</p1>
+                    <br />
+                    <p1>Next to the health is the score which increases with every enemy that is killed. If everyone except the boss is killed the player receives another health point.</p1>
+                    <br />
+                    <p1>The biggest problem within this scene was the update rate. Since the console isn't able to refresh the ASCIIs fast enough I had to manage two maps.</p1>
+                    <br />
+                    <p1>One that is displayed and another one that manages changes by the player. They then are compared and only the difference is changed in the displayed map.</p1>
+                </div>
+                <div id="Centered"><img src="../StabMario/GameView.png" alt="GameView" /></div>
+                <div class="contentField">
+                    <p1>Asside from the gameplay there is also some guidance for the player and the possibility for customization</p1>
+                </div>
+                <div id="Centered">
+                    <img style="height: 200px; transform: translate(-100%, 0%); object-fit: contain" src="../StabMario/Controls.png" alt="Controls" />
+                    <img style="height: 200px; transform: translate(-100%, 0%); object-fit: contain;" src="../StabMario/CharacterCustomization.png" alt="CharacterCustomization" />
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <a id="contactInfo"></a>
+            <div id="contactText">
+                <h1>Get in touch</h1>
+                <h4>Want to work with me?</h4>
+                <a id="discordLogo" href="https://discordapp.com/users/316940487196016640"><img id="logo" src="../Discord.png" /></a>
+                <a id="indeedLogo" href="https://profile.indeed.com/p/lucab-pxnsgpb"><img id="logo" src="../Indeed.png" /></a>
+            </div>
+            <div class="contactBlock">
+                <div class="contactElegant">
+                    <div class="contact" id="Email">
+                        <textarea class="areaSmall" rows="1" cols="100" wrap="hard" maxlength="100" placeholder="Email address"></textarea>
+                    </div>
+                    <div class="contact" id="Subject">
+                        <textarea class="areaSmall" rows="1" cols="100" wrap="hard" maxlength="100" placeholder="Subject"></textarea>
+                    </div>
+                    <div class="contact" id="Content">
+                        <textarea rows="10" cols="100" wrap="hard" maxlength="1150" placeholder="Type your message"></textarea>
+                    </div>
+                    <button class="button" id="sendButton" onclick="SendEmail()">Send</button>
+                </div>
+                <div class="contactTemporary">
+                    <div>
+                        <h4>Out of order</h4>
+                        <br />
+                        <a href="mailto:lucabuchner.official@gmail.com">Send Mail</a>
+                    </div>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>

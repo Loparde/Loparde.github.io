@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ProceduralDungeon</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kdam+Thmor+Pro&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="PortfolioStyle.css">
+    <link rel="stylesheet" href="../GeneralStyles.css">
+    <script src="../Script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../Logo.ico">
+</head>
+<body>
+    <div id="page">
+        <div id="content">
+            <h3> </h3>
+            <div class="tabs">
+                <a class="logotab" href="../index.html"> <button><img id="main" src="../Logo.png" /></button></a>
+                <a class="tab2" href="ProceduralDungeon.html"> <button>Procedural Dungeon 3D</button></a>
+                <a class="tab" href="VRPuzzleGame.html"> <button>VR Puzzle Game</button></a>
+                <a class="tab" href="StrifeOfLife.html"> <button>Strife of Life</button></a>
+                <a class="tab" href="LowpolyAnimation.html"> <button>Lowpoly Video</button></a>
+                <a class="tab" href="TicTacToe.html"> <button>Tic Tac Toe</button></a>
+                <a class="tab" href="ProceduralLabyrinth.html"> <button>Procedural Labyrinth</button></a>
+                <a class="tab" href="StabMario.html"> <button>Console Game</button></a>
+                <a class="tab" href="Art.html"> <button>Artworks</button></a>
+                <a class="tab" href="Sound.html"> <button>Sound Design</button></a>
+                <a class="tab" href="Usability.html"> <button>Usability</button></a>
+                <a class="tab" href="ComingSoon.html"> <button>Coming soon...</button></a>
+            </div>
+            <div>
+                <h5 id="WebsiteHeading">Procedural Dungeon Generation</h5>
+                <br />
+                <div class="contentField">
+                    <p1>
+                        For my bachelors degree I developed a procedural dungeon generator in a three dimensional space, that works during runtime.
+                        An additional goal was to maximize the players fun traversing the dungeon.
+                    </p1>
+                    <br />
+                    <p1>To simulate a real usecase of the generator, I created a dungeon room with loads of verticies. A single brick within the wall is made with around 600 verticies. </p1>
+                    <br />
+                    <p1>Later on I also added decorations like fire goblets. </p1>
+                </div>
+                <br />
+                <div>
+                    <div id="AlternateCentered">
+                        <img class="image" src="../Bachelor/DungeonRoom.png" alt="DungeonRoom" />
+                        <img class="image" src="../Bachelor/GameView.png" alt="GameView" />
+                    </div>
+                </div>
+                <br />
+                <div class="contentField">
+                    <img id="graphPic" src="../Bachelor/GraphLongWay.png" alt="GraphWithLongWayThrough" />
+                    <div style="width: 70%; min-height: 300px;">
+                        <p1>I managed all the functionality of how to structure the dungeon with a graph based approach. I created Nodes that have a position and hold a list of Edges. </p1>
+                        <br />
+                        <p1>The edges have a weight property as well as a Node declared as startnode and one declared as endnode. This makes the graph dynamic, weighted and directional. </p1>
+                        <br />
+                        <br />
+                        <p1>
+                            The structure itself is supposed to be fitting to the playstyle of each individual.
+                            Therefore the paths through the dungeon are balanced between the number of rooms that need to be cleared and the difficulty of them.
+                        </p1>
+                        <br />
+                        <p1>With algorithms like dijkstra or A* a short path is easily found. Hard to clear rooms are more likely to be placed on the nodes on this path. </p1>
+                        <br />
+                        <p1>
+                            The longest path was quite interesting to create because the longest path within a graph is mostly connected with a known mathematical problem,
+                            working with the 'hamiltonian cycle'.
+                        </p1>
+                        <br />
+                        <p1>
+                            I solved the problem by traversing the graph in an 'A* reverse'-manner. What I mean is that I always choose the node furthest away from the goal.
+                            If it is a dead end, I take a step back and repeat the process, excluding the dead end node.
+                        </p1>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <div id="AlternateCentered">
+                        <img style="transform: translate(50%, 0%);" id="generationPic" src="../Bachelor/Generation.png" alt="DungeonGenerationInProgess" />
+                        <img style="transform: translate(50%, 0%);" id="generationPic" src="../Bachelor/Culling.png" alt="CullingAroundPlayer" />
+                    </div>
+                </div>
+                <br />
+                <div class="contentField">
+                    <p1>
+                        After all the calculations are done the graph is being generated. Though to go easy on the hardware and to avoid disruptions of the player experience,
+                        the dungeon is generated over time(left picture).
+                    </p1>
+                    <br />
+                    <p1>Another aspect of sparing the cpu and gpu is the culling around the player. The dungeon only is only processed within a predefined radius. </p1>
+                </div>
+                <br />
+            </div>
+        </div>
+        <footer>
+            <a id="contactInfo"></a>
+            <div id="contactText">
+                <h1>Get in touch</h1>
+                <h4>Want to work with me?</h4>
+                <a id="discordLogo" href="https://discordapp.com/users/316940487196016640"><img id="logo" src="../Discord.png" /></a>
+                <a id="indeedLogo" href="https://profile.indeed.com/p/lucab-pxnsgpb"><img id="logo" src="../Indeed.png" /></a>
+            </div>
+            <div class="contactBlock">
+                <div class="contactElegant">
+                    <div class="contact" id="Email">
+                        <textarea class="areaSmall" rows="1" cols="100" wrap="hard" maxlength="100" placeholder="Email address"></textarea>
+                    </div>
+                    <div class="contact" id="Subject">
+                        <textarea class="areaSmall" rows="1" cols="100" wrap="hard" maxlength="100" placeholder="Subject"></textarea>
+                    </div>
+                    <div class="contact" id="Content">
+                        <textarea rows="10" cols="100" wrap="hard" maxlength="1150" placeholder="Type your message"></textarea>
+                    </div>
+                    <button class="button" id="sendButton" onclick="SendEmail()">Send</button>
+                </div>
+                <div class="contactTemporary">
+                    <div>
+                        <h4>Out of order</h4>
+                        <br />
+                        <a href="mailto:lucabuchner.official@gmail.com">Send Mail</a>
+                    </div>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>

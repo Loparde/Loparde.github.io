@@ -1,9 +1,104 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Index</title>
-    </head>
-    <body>
-        <h1>Here will be the website of Luca Buchner!</h1>
-    </body>
+<head>
+    <title>Luca Buchner</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kdam+Thmor+Pro&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="GeneralStyles.css">
+    <script src="Script.js"></script>
+    <link rel="icon" type="image/x-icon" href="Logo.ico">
+</head>
+<body>
+    <div id="page">
+        <div id="content">
+
+            <div class="contactButton"><a href="#contactInfo"><button>Contact Info</button></a> </div>
+            <h1>Welcome to Luca Buchner!</h1>
+            <h2>Explore his works to your hearts content!</h2>
+            <h3> </h3>
+            <div class="tabs">
+                <a class="logotab2" href="index.html"> <button><img id="main" src="Logo.png" /></button></a>
+                <a class="tab" href="Portfolio.html"> <button>Portfolio</button></a>
+            </div>
+
+            <br />
+
+            <div class="yourClass" id="introduction">
+                <div id="introText">
+                    <h1 >Game Developer</h1>
+                    <h4 >Luca Buchner</h4>
+                    <h2 >Developing with passion</h2>
+                </div>
+                <img src="Logo_Eastern.png" alt="Placeholder Picture of me"/>
+            </div>
+
+            <div style="clear:both;"></div>
+
+            <div id="aboutme">
+                <h4>About me</h4>
+                <br />
+                <p1>Hi, I am Luca, a Game Engineering Student. Currently I am in my 8th semester and contrary to what one might expect after studying for such a long time, 
+                I find more and more motivation to study and produce anything within my branch. I enjoy designing a great experience for the players, making a memorable playtime.
+                Coding is one of my passions aswell. There is nothing as fulfilling as getting something to work after coding for hours or days on a task.
+                Asside from those two main points I love to take a look in all the other areas within game production (or sometimes even outside). Learning is increadibly fun and can help
+                in situations where you'd expect it the least.</p1>
+            </div>
+
+            <div id="skillBox">
+                <h1>My Skillset</h1>
+                <div id="skills">
+                    <div id="skillsTop">
+                        <h1>Coding</h1>
+                        <h2 style="float: left; margin-left: -20%; color: var(--purple);">Game Design</h2>
+                        <h2 style="float: right; margin-right: 60%; color: var(--purple); ">Visual Effects</h2>
+                    </div>
+                    <div id="skillsLeft">
+                        <h2>3D Modelling</h2>
+                        <h2>Pixelart</h2>
+                        <h2>Webdevelopment</h2>
+                        <h2>Sounddesign</h2>
+                    </div>
+                    <div id="skillsRight">
+                        <h2>Animation</h2>
+                        <h2>Drawing</h2>
+                        <h2>Teamwork Skills</h2>
+                        <h2>UX Design</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <!--Footer-->
+        <!---->
+        <footer>
+            <a id="contactInfo"></a>
+            <div id="contactText">
+                <h1>Get in touch</h1>
+                <h4>Want to work with me?</h4>
+                <a id="discordLogo" href="https://discordapp.com/users/316940487196016640"><img id="logo" src="Discord.png" /></a>
+                <a id="indeedLogo" href="https://profile.indeed.com/p/lucab-pxnsgpb"><img id="logo" src="Indeed.png" /></a>
+            </div>
+            <div class="contactBlock">
+                <div class="contactElegant">
+                <div class="contact" id="Email">
+                    <textarea class="areaSmall" rows="1" cols="100" wrap="hard" maxlength="100" placeholder="Email address"></textarea>
+                </div>
+                <div class="contact" id="Subject">
+                    <textarea class="areaSmall" rows="1" cols="100" wrap="hard" maxlength="100" placeholder="Subject"></textarea>
+                </div>
+                <div class="contact" id="Content">
+                    <textarea rows="10" cols="100" wrap="hard" maxlength="1150" placeholder="Type your message"></textarea>
+                </div>
+                <button class="button" id="sendButton" onclick="SendEmail()">Send</button>
+                </div>
+                <div class="contactTemporary">
+                    <div>
+                        <h4>Out of order</h4>
+                        <br />
+                        <a href="mailto:lucabuchner.official@gmail.com">Send Mail</a>
+                    </div>
+                </div>
+        </footer>
+    </div>
+</body>
 </html>

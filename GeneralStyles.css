@@ -1,0 +1,334 @@
+
+/*#172d33*/
+/*#294952*/
+
+/*#271525*/
+/*#543450*/
+
+/*Turqouise #114B5F*/
+/*light background #4f4654*/
+/*soft purple #41324a*/
+
+:root {
+    --backbackground: #28252A;
+    --background: #41324a;
+    --headings: #9FD356;
+    --subHeadings: #E3F2FD;
+    --highlighted: #E3F2FD;
+    --text: #E3F2FD;
+    --darkpurple: #2E0219;
+    --purple: #8045a3;
+}
+
+.button {
+    background-color: var(--headings);
+    color: var(--backbackground);
+    float: left;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+    .button:hover {
+        background-color: var(--highlighted);
+        color: var(--background);
+    }
+
+body {
+    /*background-image: url('Background.png');*/
+    background-image: url('BackgroundNew.png');
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: var(--backbackground);
+    background-blend-mode: screen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#page {
+    position: relative;
+    min-height: 100vh
+}
+
+
+#main {
+    max-width:75px;
+    max-height:75px;
+}
+
+h1 {
+    color: var(--headings);
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    /*text-shadow: 2px 2px 3px var(--highlighted);*/
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+h2 {
+    color: var(--subHeadings);
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    /*text-shadow: 2px 2px 3px var(--highlighted);*/
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 14px;
+}
+
+h3 {
+    color: var(--headings);
+    border-bottom: solid;
+    margin-bottom: 0px;
+}
+
+h4 {
+    color: var(--highlighted);
+    margin: -10px 0px -10px 0px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 50px;
+}
+
+h5 {
+    color:var(--headings);
+    margin: -10px 0px -10px 0px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 50px;
+}
+
+p1 {
+    color: var(--text);
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+    a:hover {
+        color: var(--highlighted);
+    }
+
+.contentField {
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    width: 97%;
+}
+
+.pictureField {
+    margin: 20px auto 20px auto;
+    width: 40%;
+}
+
+#Centered {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+    #Centered img {
+        transform: translate(-50%, 0%);
+    }
+
+#AlternateCentered {
+    width: 100%;
+    height: auto;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+    #AlternateCentered img {
+        transform: translate(25%, 0%);
+    }
+
+.tab2 button {
+    background-color: var(--backbackground);
+    color: var(--highlighted);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/**/
+/*Footer and everything that goes with it*/
+/**/
+
+.contactButton {
+    color: var(--text);
+    align-content: center;
+    text-decoration: none;
+    float: right;
+}
+
+    .contactButton button {
+        background-color: var(--background);
+        color: var(--text);
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 10px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+#content {
+    min-height: 900px;
+    padding-bottom: 24rem;
+}
+
+footer {
+    position: absolute;
+    height: 24rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1553px) {
+    footer {
+        height: 45rem;
+    }
+
+    #contactBlock {
+        float:left;
+    }
+
+    #content {
+        padding-bottom: 45rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    footer {
+        height: 54rem;
+    }
+
+    #content {
+        padding-bottom: 54rem;
+    }
+}
+
+
+.contactBlock {
+    float: right;
+    margin-right: 50px;
+    margin-left: 30px;
+    display: grid;
+}
+
+.contact {
+    display: block;
+
+    background: white;
+
+    border-radius: 5px;
+
+    padding-top: 1px;
+}
+
+.contact textarea {
+    resize: none;
+    border: none;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    width: 45%;
+   
+}
+
+.areaSmall {
+    height: 23px;
+}
+
+.contact textarea:focus {
+    outline:none;
+}
+
+#Email {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#Content {
+    margin-top: 20px;
+    height: 200px;
+}
+
+#contactText {
+    padding-top: 2%;
+    padding-left: 5%;
+    float:left;
+}
+
+#sendButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    float: right;
+}
+
+#discordLogo {
+    float: left;
+    margin-left: -100px;
+}
+
+    #discordLogo img {
+        color: black;
+        max-height: 125px;
+        max-width: 125px;
+    }
+
+    #discordLogo:hover img {
+        max-height: 130px;
+        max-width: 130px;
+    }
+
+#indeedLogo {
+    float: right;
+    margin-left: 80px;
+    margin-top: 35px;
+    margin-right: 70%;
+}
+
+#indeedLogo img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+    #indeedLogo:hover img {
+        max-height: 60px;
+        max-width: 60px;
+    }
+
+.contactElegant, .contactTemporary {
+    grid-area: 1 / 1;
+}
+
+.contactTemporary {
+    margin-top: 20px;
+    background-color: rgba(40, 37, 42, 0.7);
+}
+
+    .contactTemporary div {
+        margin: 10%;
+    }
+
+    .contactTemporary a {
+        background-color: var(--headings);
+        color: var(--backbackground);
+        padding: 10px;
+        border-radius: 5px;
+    }
