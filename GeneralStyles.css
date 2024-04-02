@@ -187,6 +187,7 @@ a {
 #content {
     min-height: 900px;
     padding-bottom: 24rem;
+    overflow:hidden;
 }
 
 footer {
