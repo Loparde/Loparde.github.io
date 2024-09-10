@@ -89,19 +89,35 @@ video {
 /*About me section*/
 /**/
 #introduction {
-    min-height: 705px;
+    min-height: 605px;
     margin-right: 20px;
-    height:fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/*@media screen and (max-width: 1450px) {
+   /*@media screen and (max-width: 1450px) {
 }
 */
 
-#introduction img {
-    float:right;
-    padding-right: 100px;
-}
+    #introduction img {
+        margin: auto;
+        width: 100%;
+    }
+
+    #introduction button {
+        margin-top: 12%;
+        margin-left: 15%;
+        background-color: var(--text);
+        color: var(--background);
+        width: 70%;
+        height: 10%;
+    }
+
+        #introduction button:hover {
+            background-color: var(--headings);
+            color: var(--background);
+        }
 
 #introText {
     float: left;
