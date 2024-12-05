@@ -1,0 +1,162 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\TicTacToe.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Portfolio\\TicTacToe.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\LowpolyAnimation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Portfolio\\LowpolyAnimation.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Portfolio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\Usability.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Portfolio\\Usability.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\GeneralStyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GeneralStyles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\PortfolioStyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Portfolio\\PortfolioStyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAIwEoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-02T18:24:33.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TicTacToe.html",
+              "DocumentMoniker": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\TicTacToe.html",
+              "RelativeDocumentMoniker": "Portfolio\\TicTacToe.html",
+              "ToolTip": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\TicTacToe.html",
+              "RelativeToolTip": "Portfolio\\TicTacToe.html",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEkAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-02T18:16:13.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LowpolyAnimation.html",
+              "DocumentMoniker": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\LowpolyAnimation.html",
+              "RelativeDocumentMoniker": "Portfolio\\LowpolyAnimation.html",
+              "ToolTip": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\LowpolyAnimation.html",
+              "RelativeToolTip": "Portfolio\\LowpolyAnimation.html",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEkAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-02T18:14:13.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usability.html",
+              "DocumentMoniker": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\Usability.html",
+              "RelativeDocumentMoniker": "Portfolio\\Usability.html",
+              "ToolTip": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\Usability.html",
+              "RelativeToolTip": "Portfolio\\Usability.html",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAFYAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-02T18:11:37.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Portfolio.html",
+              "DocumentMoniker": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio.html",
+              "RelativeDocumentMoniker": "Portfolio.html",
+              "ToolTip": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio.html",
+              "RelativeToolTip": "Portfolio.html",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-02T17:39:36.565Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Style.css",
+              "DocumentMoniker": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Style.css",
+              "RelativeDocumentMoniker": "Style.css",
+              "ToolTip": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Style.css",
+              "RelativeToolTip": "Style.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-02T18:18:53.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GeneralStyles.css",
+              "DocumentMoniker": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\GeneralStyles.css",
+              "RelativeDocumentMoniker": "GeneralStyles.css",
+              "ToolTip": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\GeneralStyles.css",
+              "RelativeToolTip": "GeneralStyles.css",
+              "ViewState": "AQIAAA4BAAAAAAAAAAAAADQBAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-02T17:54:15.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PortfolioStyle.css",
+              "DocumentMoniker": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\PortfolioStyle.css",
+              "RelativeDocumentMoniker": "Portfolio\\PortfolioStyle.css",
+              "ToolTip": "G:\\Programs\\XAMPP\\htdocs\\Github\\buchner-luca.github.io\\Portfolio\\PortfolioStyle.css",
+              "RelativeToolTip": "Portfolio\\PortfolioStyle.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-02T18:11:17.419Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
