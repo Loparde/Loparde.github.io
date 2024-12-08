@@ -16,13 +16,50 @@
     --subHeadings: #E3F2FD;
     --highlighted: #E3F2FD;
     --text: #E3F2FD;
-    --darkpurple: #2E0219;
     --purple: #8045a3;
+    --primary: #41324a;
+    --secondary: #28252A;
+    --accent: #9FD356;
+    --text-light: #E3F2FD;
+    --darkpurple: #2E0219;
+}
+
+/* General Reset */
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url('Background.png');*/
+/*    background-image: url('BackgroundNew.png');
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-blend-mode: screen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+
+    background: url('BackgroundNew.png') no-repeat center center / cover;
+    background-color: var(--secondary);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: var(--text-light);
+    margin: 0;
+}
+
+header {
+    text-align: left;
+    padding: 20px;
+    background-color: var(--secondary);
+}
+
+nav {
+    margin: 0px 20px 0px 20px;
 }
 
 .button {
-    background-color: var(--headings);
-    color: var(--backbackground);
+    background-color: var(--accent);
+    color: var(--secondary);
     float: left;
     border-radius: 5px;
     border: none;
@@ -34,20 +71,9 @@
 }
 
     .button:hover {
-        background-color: var(--highlighted);
+        background-color: var(--text-light);
         color: var(--background);
     }
-
-body {
-    /*background-image: url('Background.png');*/
-    background-image: url('BackgroundNew.png');
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-color: var(--backbackground);
-    background-blend-mode: screen;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 #page {
     position: relative;
@@ -61,30 +87,28 @@ body {
 }
 
 h1 {
-    color: var(--headings);
+    color: var(--accent);
     text-transform: capitalize;
     letter-spacing: 3px;
-    /*text-shadow: 2px 2px 3px var(--highlighted);*/
     font-family: "Kdam Thmor Pro", sans-serif;
 }
 
 h2 {
-    color: var(--subHeadings);
+    color: var(--text-light);
     text-transform: capitalize;
     letter-spacing: 3px;
-    /*text-shadow: 2px 2px 3px var(--highlighted);*/
     font-family: "Kdam Thmor Pro", sans-serif;
     font-size: 14px;
 }
 
 h3 {
-    color: var(--headings);
+    color: var(--accent);
     border-bottom: solid;
     margin-bottom: 0px;
 }
 
 h4 {
-    color: var(--highlighted);
+    color: var(--text-light);
     margin: -10px 0px -10px 0px;
     text-transform: capitalize;
     letter-spacing: 3px;
@@ -93,7 +117,7 @@ h4 {
 }
 
 h5 {
-    color:var(--headings);
+    color:var(--accent);
     margin: -10px 0px -10px 0px;
     text-transform: capitalize;
     letter-spacing: 3px;
@@ -102,16 +126,16 @@ h5 {
 }
 
 p1 {
-    color: var(--text);
+    color: var(--text-light);
 }
 
 a {
-    color: var(--text);
+    color: var(--text-light);
     text-decoration: none;
 }
 
     a:hover {
-        color: var(--highlighted);
+        color: var(--text-light);
     }
 
 .contentField {
@@ -150,8 +174,8 @@ a {
     }
 
 .tab2 button {
-    background-color: var(--backbackground);
-    color: var(--highlighted);
+    background-color: var(--secondary);
+    color: var(--text-light);
     float: left;
     border: none;
     outline: none;
@@ -166,7 +190,7 @@ a {
 /**/
 
 .contactButton {
-    color: var(--text);
+    color: var(--text-light);
     align-content: center;
     text-decoration: none;
     float: right;
@@ -174,7 +198,7 @@ a {
 
     .contactButton button {
         background-color: var(--background);
-        color: var(--text);
+        color: var(--text-light);
         float: left;
         border: none;
         outline: none;
@@ -186,11 +210,13 @@ a {
 
 #content {
     min-height: 900px;
-    padding-bottom: 24rem;
+    padding-bottom: 4rem;
     overflow:hidden;
+    margin: 0px 20px 0px 20px;
 }
 
 footer {
+    /*margin: 0px 20px 0px 20px;*/
     position: absolute;
     height: 24rem;
     left: 0;
@@ -248,8 +274,8 @@ footer {
     }
 
     .contactBlock a {
-        background-color: var(--headings);
-        color: var(--backbackground);
+        background-color: var(--accent);
+        color: var(--secondary);
         padding: 10px;
         border-radius: 5px;
     }

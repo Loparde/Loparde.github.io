@@ -90,101 +90,128 @@ video {
 /**/
 #introduction {
     min-height: 605px;
-    margin-right: 20px;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
    /*@media screen and (max-width: 1450px) {
 }
 */
 
-    #introduction img {
-        margin: auto;
-        width: 100%;
-    }
-
-    #introduction button {
-        margin-top: 12%;
-        margin-left: 15%;
-        background-color: var(--text);
-        color: var(--background);
-        width: 70%;
-        height: 10%;
-    }
-
-        #introduction button:hover {
-            background-color: var(--headings);
-            color: var(--background);
-        }
-
-#introText {
+.introText {
     float: left;
-    margin-top: 12%;
-    margin-left: 15%;
     padding: 10px 20px 10px 20px;
-    background-color: var(--backbackground);
+    background-color: var(--secondary);
     border-radius: 10px;
-    box-shadow: 0px 0px 40px 70px var(--backbackground);
+    box-shadow: 0px 0px 40px 70px var(--secondary);
+    width: 30%;
+    left: 0;
 }
 
+    .introText button {
+        margin-top: 12%;
+        background-color: var(--text-light);
+        color: var(--primary);
+        width: 100%;
+        height: 25%;
+    }
+
+        .introText button:hover {
+            background-color: var(--headings);
+            color: var(--primary);
+        }
+
+.introImage {
+    width: 50%;
+    min-width: 450px;
+}
+
+    .introImage img {
+        width: 100%;
+        height: auto;
+    }
+
 #aboutme {
-    background-color: var(--background);
+    background-color: var(--primary);
+    margin: 20px;
+    padding: 30px;
     border-radius: 10px;
-    padding: 50px 50px 30px 75px;
-    margin-bottom: 10px;
-    min-height: 200px;
 }
 
 #skillBox {
-    min-height: 400px;
-    margin: 50px 50px 150px 75px;
+    display: flow;
+    padding: 0px 40px 40px 40px;
 }
 
 #skills {
-    margin-top: 15px;
-    margin-left: 50%;
-    transform: translate(-55%, 0%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
     align-content: center;
-    height: 250px;
-    width: 800px;
+    justify-content: center;
+    height: 325px;
+    width: 100%;
 }
 
     #skills h2 {
         margin-bottom: 30px;
     }
 
+    #skills #primary {
+        color: var(--purple);
+        font-size: 45px;
+    }
+
+    #skills #secondary {
+        color: var(--purple);
+        font-size: 35px;
+    }
+
+    #skills #tertiary {
+        color: var(--purple);
+        font-size: 25px;
+    }
+
+    #skills #quaternary {
+        color: var(--purple);
+        font-size: 15px;
+    }
+
 #skillTitle {
     background-color: var(--backbackground);
     border-radius: 10px;
     box-shadow: 0px 0px 7px 15px var(--backbackground);
-    padding-left: 1%;
-    margin-right: 65%;
-}
-
-#skillsTop {
-    width: 100%;
-    height: 140px;
-    margin-left: 50%;
-    transform: translate(-10%, 0%);
+    padding-left: 10px;
+    width: 175px;
 }
 
 #skillsLeft {
-    float: left;
-    margin-left: 15%;
-    background-color: var(--backbackground);
+    justify-self: right;
+    text-align: left;
+    margin-right: 30px;
+    background-color: var(--secondary);
     border-radius: 10px;
-    box-shadow: -30px 0px 40px 60px var(--backbackground);
+    box-shadow: -30px 0px 40px 60px var(--secondary);
+    width: 275px;
 }
 
+    #skillsLeft h2 {
+        margin-bottom: 50px;
+    }
+
 #skillsRight {
+    padding-top: 20px;
+    justify-self: left;
     text-align: right;
-    float: right;
-    margin-right: 15%;
-    background-color: var(--backbackground);
+    margin-left: 30px;
+    background-color: var(--secondary);
     border-radius: 10px;
-    box-shadow: 30px 0px 40px 60px var(--backbackground);
+    box-shadow: 30px 0px 40px 60px var(--secondary);
+    width: 275px;
 }
 
 /**/
@@ -270,3 +297,15 @@ video {
     padding: 10px 10px 10px 10px;
 }
 
+@media screen and (max-width: 768px) {
+    #skill-box {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
