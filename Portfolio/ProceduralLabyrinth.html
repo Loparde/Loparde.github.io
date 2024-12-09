@@ -11,23 +11,35 @@
     <link rel="icon" type="image/x-icon" href="../Logo.ico">
 </head>
 <body>
+
+    <header>
+        <h3></h3>
+    </header>
+
+    <nav>
+        <a id="logo" href="../index.html"><button><img src="../Logo.png" alt="Luca Buchner Logo"></button></a>
+        <a href="TicTacToe.html">
+            <button>
+                <svg width="40" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="8" x2="40" y2="8" stroke=var(--text-light) stroke-width="2" />
+                    <polygon points="10,3 10,13 0,8" fill=var(--text-light) />
+                </svg>
+            </button>
+        </a>
+        <a class="selected" href="ProceduralLabyrinth.html"> <button>Procedural Labyrinth</button></a>
+        <a href="StabMario.html">
+            <button>
+                <svg width="40" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="8" x2="40" y2="8" stroke=var(--text-light) stroke-width="2" />
+                    <polygon points="30,3 30,13 40,8" fill=var(--text-light) />
+                </svg>
+            </button>
+        </a>
+        <a href="../Portfolio.html"><button>Portfolio</button></a>
+    </nav>
+
     <div id="page">
-        <div id="content">
-            <h3> </h3>
-            <div class="tabs">
-                <a class="logotab" href="../index.html"> <button><img id="main" src="../Logo.png" /></button></a>
-                <a class="tab" href="ProceduralDungeon.html"> <button>Procedural Dungeon 3D</button></a>
-                <a class="tab" href="VRPuzzleGame.html"> <button>VR Puzzle Game</button></a>
-                <a class="tab" href="StrifeOfLife.html"> <button>Strife of Life</button></a>
-                <a class="tab" href="LowpolyAnimation.html"> <button>Lowpoly Video</button></a>
-                <a class="tab" href="TicTacToe.html"> <button>Tic Tac Toe</button></a>
-                <a class="tab2" href="ProceduralLabyrinth.html"> <button>Procedural Labyrinth</button></a>
-                <a class="tab" href="StabMario.html"> <button>Console Game</button></a>
-                <a class="tab" href="Art.html"> <button>Artworks</button></a>
-                <a class="tab" href="Sound.html"> <button>Sound Design</button></a>
-                <a class="tab" href="Usability.html"> <button>Usability</button></a>
-                <a class="tab" href="ComingSoon.html"> <button>Coming soon...</button></a>
-            </div>
+        <main id="content">
             <div>
                 <h5 id="WebsiteHeading">Procedural Labyrinth</h5>
                 <br />
@@ -81,6 +93,6 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </main>
 </body>
 </html>

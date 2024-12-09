@@ -73,6 +73,8 @@ nav {
         cursor: pointer;
         transition: 0.3s;
         font-size: 17px;
+        stroke: var(--text-light);
+        fill: var(--text-light);
     }
 
         nav button:hover {
@@ -87,7 +89,7 @@ nav {
         border: none;
         outline: none;
         cursor: pointer;
-        padding: 14px 10px;
+        padding: 15px 10px;
         transition: 0.3s;
         font-size: 17px;
     }
@@ -284,7 +286,7 @@ footer {
         width: 70px;
         object-position: center;
         transition: transform 0.1s ease-in-out;
-        filter: brightness(0) saturate(100%);
+        filter: brightness(0) invert(1);
     }
 
         #socialMedia img:hover {
@@ -293,7 +295,7 @@ footer {
         }
 
 .contactBlock {
-    min-height: 300px;
+    min-height: 100px;
     width: 35%;
     display: grid;
     justify-content: center;
