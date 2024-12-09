@@ -16,12 +16,12 @@
     --subHeadings: #E3F2FD;
     --highlighted: #E3F2FD;
     --text: #E3F2FD;
-    --purple: #8045a3;
     --primary: #41324a;
     --secondary: #28252A;
     --accent: #9FD356;
     --text-light: #E3F2FD;
     --darkpurple: #2E0219;
+    --purple: #8045a3;
 }
 
 /* General Reset */
@@ -32,14 +32,6 @@ body, h1, h2, h3, h4, h5, p {
 }
 
 body {
-    /*background-image: url('Background.png');*/
-    /*    background-image: url('BackgroundNew.png');
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-blend-mode: screen;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-
     background: url('BackgroundNew.png') no-repeat center center / cover;
     background-color: var(--secondary);
     font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -56,8 +48,68 @@ header {
     background-color: var(--secondary);
 }
 
+/**/
+/*Navigator*/
+/**/
 nav {
     margin: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+    nav button {
+        overflow: hidden;
+        background-color: var(--primary);
+        padding: 14px 10px;
+        background-color: inherit;
+        color: var(--text-light);
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+        nav button:hover {
+            background-color: var(--text-light);
+            color: var(--secondary);
+        }
+
+    nav .selected button {
+        background-color: var(--secondary);
+        color: var(--text-light);
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 10px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+        nav .selected button:hover {
+            background-color: var(--secondary);
+            color: var(--text-light);
+        }
+
+    nav #logo button {
+        padding: 0px 0px 3px 0px;
+    }
+
+    nav #logo img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+
+/*delete later on!!*/
+#main {
+    max-width: 75px;
+    max-height: 75px;
 }
 
 .button {
@@ -84,12 +136,6 @@ nav {
     flex: 1;
     min-height: 100vh;
     margin: 0px 20px 0px 20px;
-}
-
-
-#main {
-    max-width:75px;
-    max-height:75px;
 }
 
 h1 {
@@ -131,7 +177,7 @@ h5 {
     font-size: 50px;
 }
 
-p1 {
+p {
     color: var(--text-light);
 }
 
@@ -178,18 +224,6 @@ a {
     #AlternateCentered img {
         transform: translate(25%, 0%);
     }
-
-.tab2 button {
-    background-color: var(--secondary);
-    color: var(--text-light);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 10px;
-    transition: 0.3s;
-    font-size: 17px;
-}
 
 /**/
 /*Footer and everything that goes with it*/
@@ -252,6 +286,7 @@ footer {
         transition: transform 0.1s ease-in-out;
         filter: brightness(0) saturate(100%);
     }
+
         #socialMedia img:hover {
             transform: scale(1.1);
             object-position: center;
@@ -276,6 +311,9 @@ footer {
         border-radius: 5px;
     }
 
+/**/
+/*Media Queries*/
+/**/
 @media screen and (max-width: 768px) {
     #socialMedia {
         width: 85%;

@@ -1,90 +1,3 @@
-#logo {
-    margin-right: 0;
-    margin-left: 65%;
-    margin-top: 15px;
-    max-width: 100px;
-    max-height: 100px;
-}
-
-img {
-    width: 600px;
-    padding: 10px, 10px, 10px, 10px;
-    color: var(--highlighted);
-    align-content: center;
-}
-
-div2 {
-    max-height: 700px;
-    max-width: 1000px
-}
-
-video {
-    align-content: center;
-}
-
-/* Style the tab */
-.tabs {
-    overflow: hidden;
-    background-color: var(--background);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.tab {
-    overflow: hidden;
-    background-color: var(--background);
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    color: var(--text);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 10px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-    .tab button:hover {
-        background-color: var(--highlighted);
-        color: var(--backbackground);
-    }
-
-
-.logotab button{
-    background-color: inherit;
-    color: var(--text);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin-left: 45%;
-    transition: 0.3s;
-    font-size: 17px;
-    padding-bottom: 2px;
-}
-
-    .logotab button:hover {
-        background-color: var(--highlighted);
-    }
-
-.logotab2 button {
-    padding-bottom: 2px;
-    background-color: var(--backbackground);
-    color: var(--text);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin-left: 45%;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
 /**/
 /*About me section*/
 /**/
@@ -98,10 +11,6 @@ video {
     align-items: center;
     height: 100%;
 }
-
-   /*@media screen and (max-width: 1450px) {
-}
-*/
 
 .introText {
     margin-left: 10%;
@@ -122,7 +31,7 @@ video {
     }
 
         .introText button:hover {
-            background-color: var(--headings);
+            background-color: var(--accent);
             color: var(--primary);
         }
 
@@ -186,9 +95,9 @@ video {
     }
 
 #skillTitle {
-    background-color: var(--backbackground);
+    background-color: var(--secondary);
     border-radius: 10px;
-    box-shadow: 0px 0px 7px 15px var(--backbackground);
+    box-shadow: 0px 0px 7px 15px var(--secondary);
     padding-left: 10px;
     width: 275px;
     font-size: 40px;
@@ -224,66 +133,26 @@ video {
 /**/
 /*Portfolio Layout*/
 /**/
-
-.Portfolio {
-    height: 200px;
-    width: 200px;
-    margin: 10px 10px 10px 10px;
-    object-fit: cover;
-}
-
 #portfolioBox {
     margin: 10px 50px 50px 50px;
     text-align-last: center;
 }
 
-#top3 {
-    margin-left:auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    width: 100%;
-    background-color: var(--background);
-    border-radius: 10px;
-
-}
-    #top3 a {
-        margin: 30px 50px 40px 50px;
+    #portfolioBox a {
         position: relative;
         display: inline-block;
-        transition: opacity 0.25s;
+        transition: filter 0.25s;
     }
 
-        #top3 a:hover .img-caption {
+        #portfolioBox a:hover .img-caption {
             transform: translate(-50%, -50%) scale(1); /* to center the text, scale(1) to show text  */
             transform-origin: center;
             transition: 0.25s;
-            color: var(--text);
+            color: var(--text-light);
         }
 
-        #top3 a:hover img {
-            opacity: 0.5;
-        }
-
-#additional {
-    width: 95%;
-    margin:auto;
-}
-
-    #additional a {
-        position: relative;
-        display: inline-block;
-        transition: opacity 0.25s;
-    }
-
-        #additional a:hover .img-caption {
-            transform: translate(-50%, -50%) scale(1); /* to center the text, scale(1) to show text  */
-            transform-origin: center;
-            transition: 0.25s;
-            color: var(--text);
-        }
-
-        #additional a:hover img {
-            opacity: 0.5;
+        #portfolioBox a:hover img {
+            filter: brightness(0.5);
         }
 
 .img-caption {
@@ -299,12 +168,41 @@ video {
     transform: translate(-50%, -50%) scale(0); /* to center the text, scale(0) to doesn't show text  */
     transform-origin: center;
     transition: 0.25s;
-    background-color: var(--background);
+    background-color: var(--primary);
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
 }
 
+.Portfolio {
+    height: 200px;
+    width: 200px;
+    margin: 10px 10px 10px 10px;
+    object-fit: cover;
+}
+
+#top3 {
+    margin-bottom: 100px;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 10px;
+    text-align: center;
+}
+
+    #top3 a {
+        margin: 30px 50px 40px 50px;
+    }
+
+#additional {
+    width: 95%;
+    text-align: center;
+}
+
+
+/**/
+/*Phone Adjustments*/
+/**/
 @media screen and (max-width: 768px) {
+    /*Main Page*/
     .introText {
         margin-left: 0px;
         width: 70%;
@@ -326,5 +224,16 @@ video {
         justify-self: left;
         margin-left: 0px;
         box-shadow: -30px 0px 40px 0px var(--secondary);
+    }
+
+    /*Portfolio Page*/
+
+    #top3 a {
+        margin: 30px 0px 10px 0px;
+    }
+
+    #additional .Portfolio {
+        height: 100px;
+        width: 100px;
     }
 }
