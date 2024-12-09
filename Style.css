@@ -89,7 +89,8 @@ video {
 /*About me section*/
 /**/
 #introduction {
-    min-height: 605px;
+    margin-top: 1rem;
+    min-height: 550px;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -103,12 +104,12 @@ video {
 */
 
 .introText {
-    float: left;
+    margin-left: 10%;
     padding: 10px 20px 10px 20px;
     background-color: var(--secondary);
     border-radius: 10px;
     box-shadow: 0px 0px 40px 70px var(--secondary);
-    width: 30%;
+    width: 38%;
     left: 0;
 }
 
@@ -126,7 +127,7 @@ video {
         }
 
 .introImage {
-    width: 50%;
+    width: 48%;
     min-width: 450px;
 }
 
@@ -148,13 +149,14 @@ video {
 }
 
 #skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /*grid-template-columns: 1fr 1fr;*/
     margin-top: 4rem;
     align-content: center;
     justify-content: center;
-    height: 325px;
+    height: min-content;
     width: 100%;
+    flex-wrap:wrap;
 }
 
     #skills h2 {
@@ -196,7 +198,8 @@ video {
     background-color: var(--secondary);
     border-radius: 10px;
     box-shadow: -30px 0px 40px 60px var(--secondary);
-    width: 275px;
+    min-width: 275px;
+    height: min-content;
 }
 
     #skillsLeft h2 {
@@ -211,7 +214,8 @@ video {
     background-color: var(--secondary);
     border-radius: 10px;
     box-shadow: 30px 0px 40px 60px var(--secondary);
-    width: 275px;
+    min-width: 275px;
+    height: min-content;
 }
 
 /**/
@@ -298,14 +302,26 @@ video {
 }
 
 @media screen and (max-width: 768px) {
-    #skill-box {
-        grid-template-columns: 1fr;
+    .introText {
+        margin-left: 0px;
+        width: 70%;
     }
 
-    .tabs {
-        flex-direction: column;
+    .introImage {
+        width: 70%;
     }
 
-    h1, h2 {
-        font-size: 1.5rem;
+    #skillsLeft {
+        justify-self: left;
+        text-align: left;
+        margin-right: 0px;
+        box-shadow: -30px 0px 40px 0px var(--secondary);
     }
+
+    #skillsRight {
+        text-align: left;
+        justify-self: left;
+        margin-left: 0px;
+        box-shadow: -30px 0px 40px 0px var(--secondary);
+    }
+}

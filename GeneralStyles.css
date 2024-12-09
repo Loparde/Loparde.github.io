@@ -33,7 +33,7 @@ body, h1, h2, h3, h4, h5, p {
 
 body {
     /*background-image: url('Background.png');*/
-/*    background-image: url('BackgroundNew.png');
+    /*    background-image: url('BackgroundNew.png');
     background-repeat: repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -45,11 +45,14 @@ body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     color: var(--text-light);
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     text-align: left;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     background-color: var(--secondary);
 }
 
@@ -76,8 +79,11 @@ nav {
     }
 
 #page {
-    position: relative;
-    min-height: 100vh
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+    margin: 0px 20px 0px 20px;
 }
 
 
@@ -210,68 +216,58 @@ a {
 
 #content {
     min-height: 900px;
-    padding-bottom: 4rem;
     overflow:hidden;
-    margin: 0px 20px 0px 20px;
 }
 
 footer {
-    /*margin: 0px 20px 0px 20px;*/
-    position: absolute;
-    height: 24rem;
-    left: 0;
-    bottom: 0;
+    padding: 1rem 0px 1rem 0px;
     width: 100%;
     background-color: var(--background);
     border-radius: 10px;
-}
-
-@media screen and (max-width: 1553px) {
-    footer {
-        height: 45rem;
-    }
-
-    #contactBlock {
-        float:left;
-    }
-
-    #content {
-        padding-bottom: 45rem;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    footer {
-        height: 54rem;
-    }
-
-    #content {
-        padding-bottom: 54rem;
-    }
+    height: fit-content;
+    margin: 0px 0px 2rem 0px;
 }
 
 .contact {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+    align-content: center;
+    justify-content: space-between;
 }
+
+#socialMedia {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+}
+
+    #socialMedia img {
+        width: 70px;
+        object-position: center;
+        transition: transform 0.1s ease-in-out;
+        filter: brightness(0) saturate(100%);
+    }
+        #socialMedia img:hover {
+            transform: scale(1.1);
+            object-position: center;
+        }
 
 .contactBlock {
     min-height: 300px;
     width: 35%;
-    float: right;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 30px;
     display: grid;
+    justify-content: center;
+    align-content: center;
     background-image: url('Email.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-
-    .contactBlock div {
-        margin: auto;
-    }
 
     .contactBlock a {
         background-color: var(--accent);
@@ -280,76 +276,13 @@ footer {
         border-radius: 5px;
     }
 
-.areaSmall {
-    height: 23px;
-}
-
-#Email {
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-#Content {
-    margin-top: 20px;
-    height: 200px;
-}
-
-#contactText {
-    width: 55%;
-    padding-top: 2%;
-    padding-left: 5%;
-    float:left;
-}
-
-#sendButton {
-    margin-top: 10px;
-    padding: 10px 20px;
-    float: right;
-}
-
-#discordLogo {
-    float: left;
-    margin-left: 10%;
-    width: 25%;
-}
-
-    #discordLogo img {
-        color: black;
-        max-height: 125px;
-        max-width: 125px;
-        object-position: center;
+@media screen and (max-width: 768px) {
+    #socialMedia {
+        width: 85%;
     }
 
-    #discordLogo:hover img {
-        max-height: 130px;
-        max-width: 130px;
-        object-position: center;
+    .contactBlock {
+        width: 100%;
     }
-
-#indeedLogo {
-    width: 25%;
-    margin-left: 10%;
-}
-
-#indeedLogo img {
-    margin-top: 35px;
-    max-height: 50px;
-    max-width: 50px;
-    object-position: center;
-}
-
-    #indeedLogo:hover img {
-        max-height: 60px;
-        max-width: 60px;
-        object-position: center;
-    }
-
-.contactElegant, .contactTemporary {
-    grid-area: 1 / 1;
-}
-
-.contactTemporary {
-    margin-top: 20px;
-    background-color: rgba(40, 37, 42, 0.7);
 }
 
