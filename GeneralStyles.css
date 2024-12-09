@@ -108,11 +108,9 @@ nav {
         max-height: 75px;
     }
 
-/*delete later on!!*/
-#main {
-    max-width: 75px;
-    max-height: 75px;
-}
+/**/
+/*Standard Definitons*/
+/**/
 
 .button {
     background-color: var(--accent);
@@ -131,14 +129,6 @@ nav {
         background-color: var(--text-light);
         color: var(--background);
     }
-
-#page {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-height: 100vh;
-    margin: 0px 20px 0px 20px;
-}
 
 h1 {
     color: var(--accent);
@@ -189,47 +179,19 @@ a {
 }
 
     a:hover {
-        color: var(--text-light);
-    }
-
-.contentField {
-    background-color: var(--background);
-    border-radius: 10px;
-    padding: 20px 20px 20px 20px;
-    width: 97%;
-}
-
-.pictureField {
-    margin: 20px auto 20px auto;
-    width: 40%;
-}
-
-#Centered {
-    width: 100%;
-    height: auto;
-    padding: 10px 10px 10px 10px;
-    margin-left: 50%;
-    margin-right: 50%;
-}
-
-    #Centered img {
-        transform: translate(-50%, 0%);
-    }
-
-#AlternateCentered {
-    width: 100%;
-    height: auto;
-    margin-left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-    #AlternateCentered img {
-        transform: translate(25%, 0%);
+        color: var(--secondary);
     }
 
 /**/
 /*Footer and everything that goes with it*/
 /**/
+#page {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+    margin: 0px 20px 0px 20px;
+}
 
 .contactButton {
     color: var(--text-light);

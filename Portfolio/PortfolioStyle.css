@@ -15,6 +15,36 @@ nav button:hover polygon {
     fill: var(--secondary);
 }
 
+/**/
+/**/
+/**/
+.contentField {
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 20px 0px 20px;
+}
+
+#centered {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pictureField {
+    margin: 20px auto 20px auto;
+    width: 40%;
+}
+
+
+#AlternateCentered {
+    display: flex;
+    justify-content: center;
+    align-content: center
+}
+
 div2 {
     max-height: 700px;
     max-width: 1000px
@@ -47,83 +77,12 @@ video {
 }
 
 /**/
-/*Tabbar*/
-/**/
-.tabs {
-    overflow: hidden;
-    background-color: var(--background);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.tab {
-    overflow: hidden;
-    background-color: var(--background);
-}
-
-.tab button {
-    background-color: inherit;
-    color: var(--text);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 10px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-    .tab button:hover {
-        background-color: var(--highlighted);
-        color: var(--backbackground);
-    }
-
-    .tab button.active {
-        background-color: var(--highlighted);
-    }
-
-.logotab button{
-    background-color: inherit;
-    color: var(--text);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 1px 0px;
-    margin: 0px -10px;
-    transition: 0.3s;
-    font-size: 17px;
-    padding-bottom: 2px;
-}
-
-    .logotab button:hover {
-        background-color: var(--highlighted);
-    }
-
-    .logotab button.active {
-        background-color: var(--highlighted);
-    }
-
-.tab2 button {
-    background-color: var(--backbackground);
-    color: var(--highlighted);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 10px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/**/
 /*pictures*/
 /**/
 .image {
     width: 600px;
     padding: 10px, 10px, 10px, 10px;
     color: var(--highlighted);
-    align-content: center;
 }
 
 .Pictures {
@@ -150,7 +109,7 @@ video {
 /**/
 
 #graphPic {
-    float:right;
+    float: right;
     width: 300px;
     height: 300px;
 }
@@ -274,4 +233,25 @@ video {
     margin: 20px;
     max-width: 80%;
     object-fit: contain;
+}
+
+/**/
+/*Media adjustments*/
+/**/
+@media screen and (max-width: 768px) {
+    .image {
+        width: 300px;
+        padding: 10px, 10px, 10px, 10px;
+    }
+
+    #graphPic {
+        width: 100%;
+        height: auto;
+    }
+
+    #generationPic {
+        width: 300px;
+        object-fit: cover;
+    }
+
 }
