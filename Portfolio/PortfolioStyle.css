@@ -39,7 +39,6 @@ nav button:hover polygon {
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
     margin: 0px 20px 0px 20px;
-    /*min-width: 95%;  ---think of a solution*/  
 }
 
 #centered {
@@ -53,15 +52,6 @@ nav button:hover polygon {
 .pictureField {
     margin: 20px auto 20px auto;
     width: 40%;
-}
-
-div2 {
-    max-height: 700px;
-    max-width: 1000px
-}
-
-video {
-    align-content: center;
 }
 
 #WebsiteHeading {
@@ -101,31 +91,16 @@ video {
         padding: 20px 20px 20px 20px;
     }
 
-/**/
-/*pictures*/
-/**/
 .image {
     max-height: 300px;
-    width: 600px;
+    max-width: 600px;
     padding: 10px, 10px, 10px, 10px;
     color: var(--highlighted);
     object-fit: contain;
 }
 
-.Pictures div {
-    display:flex;
-    flex-wrap: wrap;
-}
-
-.Pictures img {
-    max-height:400px;
-    max-width:400px;
-    object-fit: contain;
-}
-
-.Pictures h5 {
-    width: 100%;
-    margin-bottom: 30px;
+#manyPictures {
+    max-width: 500px;
 }
 
 /**/
@@ -164,32 +139,27 @@ video {
     max-width: 100%;
 }
 
-#manyPictures {
-    max-width: 500px;
-}
-
 /**/
 /*Art*/
 /**/
 
 .PictureCollection {
-    padding: 0px 15% 0px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0px 15% 0px 15%;
 }
 
 #ArtPreview {
     height: 200px;
     width: 200px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     object-fit: cover;
 }
 
 #ArtFull {
     min-width: 100%;
     min-height: 100%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    left: 50%;
-    top: 50%;
 }
 
 #ArtFullContainer {
@@ -199,7 +169,7 @@ video {
     transform: translate(-50%, -50%);
     width: 60%;
     height: 80%;
-    background-color: var(--background);
+    background-color: var(--primary);
     background-blend-mode: darken;
     justify-content: center;
     align-content: center;
@@ -229,14 +199,20 @@ video {
 
     #Navigation div {
         margin: 5% 0px 100% 0px;
-        background-color: var(--text);
+        background-color: var(--primary);
         padding: 5px 5px 5px 5px;
         border-radius: 5px 5px 5px 5px;
     }
 
     #Navigation a {
-        color: var(--backbackground);
+        color: var(--text-light);
     }
+
+.Pictures img {
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: contain;
+}
 
 /**/
 /*Usability*/
@@ -246,6 +222,16 @@ video {
     max-height: 400px;
     max-width: 80%;
     object-fit: contain;
+}
+
+#usabilityOverlay {
+    max-height: 300px;
+    float: left;
+    margin: 0px 20px 21px 20px;
+}
+
+#usabilityAfterOverlay {
+    clear: both;
 }
 
 /**/
@@ -267,6 +253,16 @@ video {
         object-fit: cover;
     }
 
+    #videoField video {
+        width: 320px;
+        height: 180px;
+    }
+
+    #videoField iframe {
+        width: 320px;
+        height: 180px;
+    }
+
     /*VR*/
     #posterVR {
         margin: 0px 0px 20px 0px;
@@ -276,14 +272,9 @@ video {
         object-fit: contain;
     }
 
-    #videoField video {
-        width: 320px;
-        height: 180px;
-    }
-
-    #videoField iframe {
-        width: 320px;
-        height: 180px;
+    /*Art*/
+    .PictureCollection {
+        justify-content: center;
     }
 }
 

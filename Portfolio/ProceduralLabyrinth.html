@@ -35,7 +35,7 @@
                 </svg>
             </button>
         </a>
-        <a href="../Portfolio.html"><button>Portfolio</button></a>
+        <a href="../Portfolio.html"><button class="portfolioIcon"><img src="../Grid.png" /></button></a>
     </nav>
 
     <div id="page">
@@ -44,37 +44,51 @@
                 <h5 id="WebsiteHeading">Procedural Labyrinth</h5>
                 <br />
                 <div class="contentField">
-                    <p1>In a group project, it was my assignment to create a labyrinth generator. Since I had recently properly understood recursion, I decided to create the labyrinth recursive. </p1>
-                    <br />
-                    <p1>
+                    <p>In a group project, it was my assignment to create a labyrinth generator. Since I had recently properly understood recursion, I decided to create the labyrinth recursively. </p>
+                    <p>
                         The maze is saved as a two-dimensional array, that has 1's for walls and 0's for hallways. Before the generation, the array is filled with 0's.
                         The recursive function begins in the middle, working outward. The reason for this was that the player has to start in the middle as well.
-                    </p1>
-                    <br />
-                    <p1>After every step, multiple things are considered: Is the next tile a wall? Would adding this path create a circle? How many new paths? ... </p1>
+                    </p>
+                    <p>After every step, multiple things are considered: Is the next tile a wall? Would adding this path create a circle? How many new paths? ... </p>
                 </div>
-                <div id="Centered">
-                    <img src="../ProceduralLabyrinth/AverageLab.png" alt="AverageLabyrinthGeneration" />
+
+                <br />
+
+                <div id="centered">
+                    <img class="image" src="../ProceduralLabyrinth/AverageLab.png" alt="AverageLabyrinthGeneration" />
                 </div>
+
+                <br />
+
                 <div class="contentField">
                     <p1>The function does not end once an exit is found; instead, it ends once no more paths can be built. </p1>
                     <br />
                     <p1>That can cause some really good results with a well-filled grid...</p1>
                 </div>
-                <div id="Centered">
-                    <img style="transform: translate(-100%, 0%); height: 300px; width: 300px; object-fit: cover; margin-left: -100px" src="../ProceduralLabyrinth/GoodLab.png" alt="GoodLabyrinthGeneration" />
-                    <img style="transform: translate(-100%, 0%); height: 300px; width: 300px; object-fit: cover; margin-left: 200px; " src="../ProceduralLabyrinth/GoodLab2.png" alt="GoodLabyrinthGeneration" />
+
+                <br />
+
+                <div id="centered">
+                    <img class="image" src="../ProceduralLabyrinth/GoodLab.png" alt="GoodLabyrinthGeneration" />
+                    <img class="image" src="../ProceduralLabyrinth/GoodLab2.png" alt="GoodLabyrinthGeneration" />
                 </div>
+
+                <br />
+
                 <div class="contentField">
-                    <p1>
+                    <p>
                         ...but there are also instances when the algoritm collides quickly or cover only one half of the map. For example when it generates only little hallway splits and then collides with itself.
                         It's like running into yourself while playing 'snake', but your snake can split itself.
-                    </p1>
+                    </p>
                 </div>
-                <div id="Centered">
-                    <img style="transform: translate(-100%, 0%); height: 300px; width: 300px; object-fit: cover; margin-left: -100px; " src="../ProceduralLabyrinth/BadLab.png" alt="BadLabyrinthGeneration" />
-                    <img style="transform: translate(-100%, 0%); height: 300px; width: 300px; object-fit: cover; margin-left: 200px; " src="../ProceduralLabyrinth/HalfLab.png" alt="HalfLabyrinthGeneration" />
+
+                <br />
+                <div id="centered">
+                    <img class="image" src="../ProceduralLabyrinth/BadLab.png" alt="BadLabyrinthGeneration" />
+                    <img class="image" src="../ProceduralLabyrinth/HalfLab.png" alt="HalfLabyrinthGeneration" />
                 </div>
+
+                <br />
             </div>
 
             <footer>
