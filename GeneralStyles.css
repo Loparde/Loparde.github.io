@@ -286,5 +286,9 @@ footer {
     .contactBlock {
         width: 100%;
     }
+
+    #socialMedia img {
+        width: 45px;
+    }
 }
 
