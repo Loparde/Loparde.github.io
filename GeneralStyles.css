@@ -161,12 +161,13 @@ h4 {
 }
 
 h5 {
-    color:var(--accent);
+    color: var(--accent);
     margin: -10px 0px -10px 0px;
     text-transform: capitalize;
     letter-spacing: 3px;
     font-family: "Kdam Thmor Pro", sans-serif;
     font-size: 50px;
+    text-shadow: -2px -2px 0 var(--backbackground), 2px -2px 0 var(--backbackground), -2px 2px 0 var(--backbackground), 2px 2px 0 var(--backbackground);
 }
 
 p {
