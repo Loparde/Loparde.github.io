@@ -108,6 +108,66 @@ nav {
         max-height: 75px;
     }
 
+nav1 {
+    margin: 0px 0px 10px 0px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+    nav1 button {
+        overflow: hidden;
+        background-color: var(--primary);
+        padding: 14px 10px;
+        color: var(--text-light);
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        stroke: var(--text-light);
+        fill: var(--text-light);
+        border-radius: 10px 10px 10px 10px;
+    }
+
+        nav1 button:hover {
+            background-color: var(--text-light);
+            color: var(--secondary);
+        }
+
+    nav1 .selected button {
+        background-color: var(--secondary);
+        color: var(--text-light);
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px 10px;
+        transition: 0.3s;
+        font-size: 17px;
+        box-shadow: var(--primary) 0px 5px;
+    }
+
+        nav1 .selected button:hover {
+            background-color: var(--secondary);
+            color: var(--text-light);
+        }
+
+    nav1 #logo button {
+        padding: 0px 0px 3px 0px;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    nav1 #logo img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+
 /**/
 /*Standard Definitons*/
 /**/
