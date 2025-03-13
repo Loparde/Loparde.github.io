@@ -254,8 +254,8 @@ nav button:hover polygon {
     }
 
     #videoField video {
-        width: 320px;
-        height: 180px;
+        width: 240px;
+        height: 135px;
     }
 
     #videoField iframe {
