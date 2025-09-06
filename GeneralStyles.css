@@ -80,6 +80,8 @@ nav {
         nav button:hover {
             background-color: var(--text-light);
             color: var(--secondary);
+            stroke: var(--secondary);
+            fill: var(--secondary);
         }
 
     nav .selected button {
