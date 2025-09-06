@@ -140,6 +140,8 @@ nav1 {
         nav1 button:hover {
             background-color: var(--text-light);
             color: var(--secondary);
+            stroke: var(--secondary);
+            fill: var(--secondary);
         }
 
     nav1 .selected button {

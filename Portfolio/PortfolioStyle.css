@@ -91,6 +91,11 @@ nav button:hover polygon {
         padding: 20px 20px 20px 20px;
     }
 
+    #videoField #dustveilVideo{
+        width: 100%; 
+        height: 946px;
+    }
+
 .image {
     max-height: 300px;
     max-width: 600px;
@@ -259,6 +264,11 @@ nav button:hover polygon {
     }
 
     #videoField iframe {
+        width: 320px;
+        height: 180px;
+    }
+
+    #videoField #dustveilVideo{
         width: 320px;
         height: 180px;
     }
