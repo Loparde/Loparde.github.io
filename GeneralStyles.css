@@ -64,7 +64,8 @@ nav {
     nav button {
         overflow: hidden;
         background-color: var(--primary);
-        padding: 14px 10px;
+        height: 60px;
+        padding: 0px 10px;
         background-color: inherit;
         color: var(--text-light);
         float: left;
@@ -91,7 +92,7 @@ nav {
         border: none;
         outline: none;
         cursor: pointer;
-        padding: 15px 10px;
+        height: 60px;
         transition: 0.3s;
         font-size: 17px;
     }
@@ -344,6 +345,14 @@ footer {
 /*Media Queries*/
 /**/
 @media screen and (max-width: 768px) {
+    nav button {
+        height: 80px;
+    }
+
+    nav .selected button {
+        height: 80px;
+    }
+
     #socialMedia {
         width: 85%;
     }

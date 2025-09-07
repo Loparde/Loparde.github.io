@@ -24,7 +24,7 @@ nav button:hover polygon {
 
 .portfolioIcon img {
     max-height: 30px;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) saturate(90%) invert(100%) sepia(90%) hue-rotate(130deg) saturate(250%) brightness(90%);
 }
 
 .portfolioIcon:hover img {
